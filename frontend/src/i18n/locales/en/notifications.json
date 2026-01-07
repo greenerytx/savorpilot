@@ -1,0 +1,36 @@
+{
+  "title": "Notifications",
+  "actions": {
+    "markAllRead": "Mark all as read",
+    "deleteRead": "Delete read notifications",
+    "dismiss": "Dismiss",
+    "delete": "Delete notification"
+  },
+  "status": {
+    "inProgress": "In Progress",
+    "recentActivity": "Recent Activity"
+  },
+  "empty": {
+    "title": "No notifications yet",
+    "description": "When someone shares a recipe with you, it will appear here"
+  },
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago"
+  },
+  "jobs": {
+    "importComplete": "Import Complete",
+    "importFailed": "Import Failed",
+    "importingRecipes": "Importing Recipes",
+    "starting": "Starting...",
+    "successfullyImported": "Successfully imported {{count}} recipe",
+    "successfullyImported_plural": "Successfully imported {{count}} recipes",
+    "failedCount": "({{count}} failed)",
+    "failedToImport": "Failed to import recipes",
+    "postsProcessed": "{{processed}} of {{total}} posts processed",
+    "imported": "{{count}} imported",
+    "failed": "{{count}} failed"
+  }
+}

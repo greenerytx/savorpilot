@@ -1,0 +1,170 @@
+{
+  "savedPosts": {
+    "title": "المنشورات المحفوظة",
+    "subtitle": "استيراد الوصفات من منشوراتك المحفوظة على إنستغرام",
+    "getExtension": "احصل على الإضافة",
+    "refresh": "تحديث",
+    "searchPlaceholder": "البحث في النصوص...",
+    "filters": "التصفية",
+    "select": "تحديد",
+    "deleteAllDismissed": "حذف كل المتجاهل",
+    "clearFilters": "مسح التصفية",
+    "tabs": {
+      "all": "الكل",
+      "pending": "معلق",
+      "inProgress": "قيد التنفيذ",
+      "imported": "مستورد",
+      "dismissed": "متجاهل"
+    },
+    "filterOptions": {
+      "allAccounts": "جميع الحسابات",
+      "allCollections": "جميع المجموعات"
+    },
+    "sort": {
+      "label": "الترتيب:",
+      "dateAdded": "تاريخ الإضافة",
+      "datePosted": "تاريخ النشر",
+      "account": "الحساب",
+      "likes": "الإعجابات",
+      "comments": "التعليقات",
+      "ascending": "تصاعدي",
+      "descending": "تنازلي"
+    },
+    "selection": {
+      "selected": "{{count}} محدد",
+      "deselectPage": "إلغاء تحديد الصفحة",
+      "selectPage": "تحديد الصفحة",
+      "selectAllFiltered": "تحديد الكل المصفى ({{count}})",
+      "selectAllPending": "تحديد الكل المعلق ({{count}})",
+      "clearSelection": "مسح التحديد",
+      "loading": "جاري التحميل..."
+    },
+    "actions": {
+      "reloadImages": "إعادة تحميل الصور",
+      "reloadImagesTitle": "المزامنة من الإضافة لإعادة تحميل الصور منتهية الصلاحية",
+      "dismiss": "تجاهل",
+      "delete": "حذف",
+      "importSelected": "استيراد المحدد"
+    },
+    "empty": {
+      "title": "لا توجد منشورات محفوظة",
+      "withFilters": "لا توجد منشورات تطابق التصفية الحالية. حاول تعديلها.",
+      "noFilters": "استخدم إضافة Chrome لمزامنة منشوراتك المحفوظة.",
+      "getChromeExtension": "احصل على إضافة Chrome"
+    },
+    "error": {
+      "title": "فشل تحميل المنشورات",
+      "message": "يرجى المحاولة لاحقاً",
+      "tryAgain": "حاول مرة أخرى"
+    },
+    "pagination": {
+      "previous": "السابق",
+      "next": "التالي",
+      "page": "صفحة {{current}} من {{total}}"
+    },
+    "confirm": {
+      "deleteTitle": "حذف {{count}} منشور؟",
+      "deleteMessage": "لا يمكن التراجع عن هذا الإجراء. سيتم حذف المنشورات نهائياً.",
+      "deleteAllTitle": "حذف جميع المنشورات {{status}}؟",
+      "deleteAllMessage": "سيتم حذف جميع المنشورات بحالة \"{{status}}\" نهائياً. لا يمكن التراجع عن هذا الإجراء.",
+      "cancel": "إلغاء",
+      "deletePosts": "حذف المنشورات",
+      "deleteAll": "حذف الكل"
+    }
+  },
+  "import": {
+    "title": "استيراد وصفة",
+    "analyzing": "جاري تحليل المنشور بالذكاء الاصطناعي...",
+    "failedToParse": "فشل تحليل المنشور",
+    "tryAgain": "حاول مرة أخرى",
+    "aiConfidence": "ثقة الذكاء الاصطناعي:",
+    "translationAvailable": "النص الأصلي بلغة {{language}}. الترجمة متاحة.",
+    "noStepsDetected": "لم يتم اكتشاف خطوات طهي في النص.",
+    "generateWithAI": "إنشاء بالذكاء الاصطناعي",
+    "generatingSteps": "جاري إنشاء الخطوات...",
+    "stepsGenerated": "تم إنشاء الخطوات بنجاح!",
+    "failedToGenerateSteps": "فشل إنشاء الخطوات",
+    "cancel": "إلغاء",
+    "importRecipe": "استيراد الوصفة",
+    "viewOriginalCaption": "عرض النص الأصلي"
+  },
+  "extension": {
+    "title": "إضافة Chrome",
+    "subtitle": "مزامنة منشوراتك المحفوظة على إنستغرام",
+    "getExtension": "احصل على الإضافة",
+    "description": "تتيح لك إضافة SavorPilot لـ Chrome مزامنة منشوراتك المحفوظة على إنستغرام مباشرة إلى حسابك. يتم استخدام ملفات تعريف الارتباط الخاصة بجلستك بشكل آمن.",
+    "downloading": "جاري التحميل...",
+    "downloadExtension": "تحميل الإضافة",
+    "downloadFailed": "فشل تحميل الإضافة. يرجى المحاولة مرة أخرى.",
+    "installationSteps": "خطوات التثبيت",
+    "steps": {
+      "download": {
+        "title": "تحميل الإضافة",
+        "description": "انقر على الزر أدناه لتحميل ملفات إضافة SavorPilot لـ Chrome."
+      },
+      "extract": {
+        "title": "فك الضغط",
+        "description": "فك ضغط الملف المحمل إلى مجلد على جهازك (مثل: المستندات/SavorPilot-Extension)."
+      },
+      "openChrome": {
+        "title": "فتح إضافات Chrome",
+        "description": "افتح Chrome واذهب إلى chrome://extensions أو انقر على القائمة ← أدوات إضافية ← الإضافات."
+      },
+      "developerMode": {
+        "title": "تفعيل وضع المطور",
+        "description": "فعّل \"وضع المطور\" في الزاوية العلوية اليمنى من صفحة الإضافات."
+      },
+      "loadExtension": {
+        "title": "تحميل الإضافة",
+        "description": "انقر على \"تحميل غير مضغوط\" واختر المجلد الذي فككت فيه ملفات الإضافة."
+      },
+      "pinExtension": {
+        "title": "تثبيت الإضافة",
+        "description": "انقر على أيقونة الأحجية في شريط أدوات Chrome وثبّت SavorPilot للوصول السريع."
+      }
+    },
+    "howToUse": "كيفية الاستخدام",
+    "usageSteps": {
+      "step1": "تأكد من تسجيل دخولك إلى إنستغرام في Chrome",
+      "step2": "تأكد من تسجيل دخولك إلى SavorPilot في Chrome",
+      "step3": "انقر على أيقونة إضافة SavorPilot في شريط الأدوات",
+      "step4": "انقر على \"مزامنة المنشورات المحفوظة\" لاستيراد منشوراتك",
+      "step5": "ستظهر منشوراتك في هذه الصفحة جاهزة للاستيراد!"
+    },
+    "troubleshooting": "استكشاف الأخطاء",
+    "troubleshootingItems": {
+      "notLoggedInInstagram": "\"غير مسجل الدخول إلى إنستغرام\" - قم بتحديث إنستغرام وحاول مرة أخرى",
+      "notLoggedInSavorPilot": "\"غير مسجل الدخول إلى SavorPilot\" - تأكد من تسجيل دخولك هنا أولاً",
+      "syncFailed": "\"فشلت المزامنة\" - تحقق من اتصالك وحاول تسجيل الخروج/الدخول"
+    },
+    "chromeHelp": "مساعدة إضافات Chrome",
+    "close": "إغلاق",
+    "copyUrl": "نسخ الرابط"
+  },
+  "card": {
+    "viewCaption": "انقر لعرض النص الكامل",
+    "previewCaption": "معاينة النص",
+    "parse": "تحليل",
+    "translate": "ترجمة",
+    "generateSteps": "إنشاء الخطوات",
+    "import": "استيراد",
+    "dismiss": "تجاهل",
+    "restore": "استعادة"
+  },
+  "captionModal": {
+    "fullCaption": "النص الكامل",
+    "translate": "ترجمة",
+    "translating": "جاري الترجمة...",
+    "parse": "تحليل بالذكاء الاصطناعي",
+    "parsing": "جاري التحليل...",
+    "generateSteps": "إنشاء الخطوات",
+    "generatingSteps": "جاري الإنشاء...",
+    "import": "استيراد",
+    "dismiss": "تجاهل",
+    "restore": "استعادة",
+    "likes": "إعجاب",
+    "comments": "تعليق",
+    "postedOn": "نُشر في",
+    "close": "إغلاق"
+  }
+}

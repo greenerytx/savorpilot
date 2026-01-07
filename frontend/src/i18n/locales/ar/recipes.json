@@ -1,0 +1,155 @@
+{
+  "categories": {
+    "all": "الكل",
+    "breakfast": "إفطار",
+    "lunch": "غداء",
+    "dinner": "عشاء",
+    "dessert": "حلوى",
+    "snack": "وجبة خفيفة",
+    "salad": "سلطة",
+    "soup": "شوربة"
+  },
+  "difficulty": {
+    "easy": "سهل",
+    "medium": "متوسط",
+    "hard": "صعب",
+    "expert": "خبير"
+  },
+  "form": {
+    "title": "عنوان الوصفة",
+    "description": "الوصف",
+    "author": "المؤلف / الشيف",
+    "prepTime": "وقت التحضير (دقيقة)",
+    "cookTime": "وقت الطهي (دقيقة)",
+    "servings": "الحصص",
+    "difficulty": "الصعوبة",
+    "selectDifficulty": "اختر...",
+    "ingredients": "المكونات",
+    "ingredientsCount": "المكونات ({{count}})",
+    "steps": "الخطوات",
+    "stepsCount": "الخطوات ({{count}})",
+    "notes": "الملاحظات",
+    "tags": "الوسوم",
+    "category": "الفئة"
+  },
+  "actions": {
+    "addRecipe": "إضافة وصفة",
+    "editRecipe": "تعديل الوصفة",
+    "deleteRecipe": "حذف الوصفة",
+    "saveRecipe": "حفظ الوصفة",
+    "generateWithAI": "إنشاء بالذكاء الاصطناعي",
+    "translateRecipe": "ترجمة للإنجليزية والعربية",
+    "reloadImage": "إعادة تحميل الصورة",
+    "reloadImages": "إعادة تحميل الصور",
+    "viewOriginal": "عرض المصدر الأصلي",
+    "viewOriginalCaption": "عرض النص الأصلي"
+  },
+  "labels": {
+    "totalTime": "الوقت الكلي",
+    "servings": "الحصص",
+    "difficulty": "الصعوبة",
+    "adjustServings": "تعديل الحصص:",
+    "by": "بواسطة",
+    "optional": "اختياري",
+    "stepsTotal": "{{count}} خطوات إجمالاً",
+    "minutes": "{{count}} دقيقة",
+    "personalNotes": "ملاحظات شخصية",
+    "noPersonalNotes": "لا توجد ملاحظات شخصية بعد",
+    "sharedNotes": "ملاحظات مشتركة",
+    "editNotes": "تعديل الملاحظات"
+  },
+  "tabs": {
+    "ingredients": "المكونات",
+    "steps": "الخطوات",
+    "nutrition": "القيم الغذائية",
+    "notes": "الملاحظات"
+  },
+  "translation": {
+    "available": "متاح",
+    "translating": "جاري الترجمة...",
+    "retranslate": "إعادة الترجمة",
+    "collapse": "طي",
+    "expand": "توسيع",
+    "english": "English",
+    "arabic": "العربية",
+    "ingredientsLabel": "المكونات:",
+    "stepsLabel": "الخطوات:",
+    "tipLabel": "نصيحة:"
+  },
+  "ai": {
+    "enhanced": "محسّن بالذكاء الاصطناعي",
+    "generating": "جاري الإنشاء...",
+    "generateSteps": "إنشاء خطوات مفصلة",
+    "regenerateSteps": "إعادة إنشاء الخطوات",
+    "generatedSuccess": "تم إنشاء الخطوات المفصلة بنجاح!",
+    "generatedFailed": "فشل إنشاء الخطوات. يرجى المحاولة مرة أخرى.",
+    "translatedSuccess": "تمت ترجمة الوصفة للإنجليزية والعربية!",
+    "translatedFailed": "فشلت ترجمة الوصفة. يرجى المحاولة مرة أخرى."
+  },
+  "list": {
+    "title": "وصفاتي",
+    "subtitle": "{{count}} وصفة في مجموعتك",
+    "addRecipe": "إضافة وصفة",
+    "searchPlaceholder": "البحث في الوصفات...",
+    "filterByChef": "التصفية حسب الشيف:",
+    "filters": "التصفية",
+    "select": "تحديد",
+    "demoMode": "وضع العرض - استخدام بيانات تجريبية",
+    "sort": {
+      "label": "الترتيب:",
+      "dateAdded": "تاريخ الإضافة",
+      "title": "العنوان",
+      "prepTime": "وقت التحضير",
+      "cookTime": "وقت الطهي",
+      "servings": "الحصص",
+      "ascending": "تصاعدي",
+      "descending": "تنازلي"
+    },
+    "selection": {
+      "selected": "{{count}} محدد",
+      "deselectAll": "إلغاء تحديد الكل",
+      "selectAll": "تحديد الكل",
+      "clearSelection": "مسح التحديد"
+    },
+    "bulkActions": {
+      "reloading": "جاري إعادة التحميل...",
+      "reloadImages": "إعادة تحميل الصور",
+      "reloadSuccess": "تم إعادة تحميل {{count}} صورة",
+      "reloadFailed": "فشل إعادة تحميل {{count}} صورة"
+    },
+    "pagination": {
+      "previous": "السابق",
+      "next": "التالي",
+      "page": "صفحة {{current}} من {{total}}"
+    },
+    "empty": {
+      "title": "لم يتم العثور على وصفات",
+      "tryAdjusting": "حاول تعديل التصفية",
+      "noRecipesYet": "لم تضف أي وصفات بعد",
+      "addFirst": "أضف وصفتك الأولى"
+    },
+    "error": {
+      "title": "فشل تحميل الوصفات",
+      "message": "يرجى المحاولة لاحقاً"
+    }
+  },
+  "errors": {
+    "notFound": "الوصفة غير موجودة",
+    "notFoundDesc": "الوصفة التي تبحث عنها غير موجودة.",
+    "failedToDelete": "فشل حذف الوصفة",
+    "failedToSaveImage": "فشل حفظ الصورة. يرجى المحاولة مرة أخرى.",
+    "imageSaved": "تم حفظ الصورة محلياً!"
+  },
+  "confirm": {
+    "deleteTitle": "حذف الوصفة",
+    "deleteMessage": "هل أنت متأكد من حذف هذه الوصفة؟",
+    "deleteButton": "حذف"
+  },
+  "demo": {
+    "viewingSample": "وضع العرض - عرض وصفة تجريبية"
+  },
+  "video": {
+    "label": "فيديو",
+    "notSupported": "متصفحك لا يدعم تشغيل الفيديو."
+  }
+}

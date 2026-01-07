@@ -1,0 +1,30 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "myRecipes": "My Recipes",
+    "collections": "Collections",
+    "savedPosts": "Saved Posts",
+    "youtube": "YouTube",
+    "shared": "Shared",
+    "dinnerCircles": "Dinner Circles",
+    "import": "Import",
+    "fromUrl": "From URL",
+    "planning": "Planning",
+    "mealPlanner": "Meal Planner",
+    "shoppingList": "Shopping List",
+    "partyMode": "Party Mode",
+    "settings": "Settings",
+    "signOut": "Sign out"
+  },
+  "header": {
+    "searchPlaceholder": "Search recipes, ingredients...",
+    "notifications": "Notifications"
+  },
+  "actions": {
+    "addRecipe": "Add Recipe",
+    "generateRecipe": "Generate Recipe"
+  },
+  "brand": {
+    "name": "SavorPilot"
+  }
+}

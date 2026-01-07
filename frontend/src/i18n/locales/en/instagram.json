@@ -1,0 +1,175 @@
+{
+  "savedPosts": {
+    "title": "Saved Posts",
+    "subtitle": "Import recipes from your saved Instagram posts",
+    "getExtension": "Get Extension",
+    "refresh": "Refresh",
+    "searchPlaceholder": "Search captions...",
+    "filters": "Filters",
+    "select": "Select",
+    "deleteAllDismissed": "Delete All Dismissed",
+    "clearFilters": "Clear filters",
+    "tabs": {
+      "all": "All",
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "imported": "Imported",
+      "dismissed": "Dismissed"
+    },
+    "filterOptions": {
+      "allAccounts": "All accounts",
+      "allCollections": "All collections"
+    },
+    "sort": {
+      "label": "Sort:",
+      "dateAdded": "Date Added",
+      "datePosted": "Date Posted",
+      "account": "Account",
+      "likes": "Likes",
+      "comments": "Comments",
+      "ascending": "Ascending",
+      "descending": "Descending"
+    },
+    "selection": {
+      "selected": "{{count}} selected",
+      "deselectPage": "Deselect page",
+      "selectPage": "Select page",
+      "selectAllFiltered": "Select all filtered ({{count}})",
+      "selectAllPending": "Select all pending ({{count}})",
+      "clearSelection": "Clear selection",
+      "loading": "Loading..."
+    },
+    "actions": {
+      "reloadImages": "Reload Images",
+      "reloadImagesTitle": "Sync from extension to reload expired images",
+      "dismiss": "Dismiss",
+      "delete": "Delete",
+      "importSelected": "Import Selected"
+    },
+    "empty": {
+      "title": "No saved posts",
+      "withFilters": "No posts match your current filters. Try adjusting them.",
+      "noFilters": "Use the Chrome extension to sync your saved Instagram posts.",
+      "getChromeExtension": "Get Chrome Extension"
+    },
+    "error": {
+      "title": "Failed to load posts",
+      "message": "Please try again later",
+      "tryAgain": "Try Again"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {{current}} of {{total}}"
+    },
+    "confirm": {
+      "deleteTitle": "Delete {{count}} posts?",
+      "deleteMessage": "This action cannot be undone. The posts will be permanently removed from your saved posts.",
+      "deleteAllTitle": "Delete all {{status}} posts?",
+      "deleteAllMessage": "This will permanently delete all posts with status \"{{status}}\". This action cannot be undone.",
+      "cancel": "Cancel",
+      "deletePosts": "Delete Posts",
+      "deleteAll": "Delete All"
+    },
+    "importing": {
+      "title": "Importing {{count}} posts...",
+      "message": "These posts are currently being processed. Check the In Progress tab or wait for completion.",
+      "viewOtherPages": "View Other Pages"
+    }
+  },
+  "import": {
+    "title": "Import Recipe",
+    "analyzing": "Analyzing post with AI...",
+    "failedToParse": "Failed to parse post",
+    "tryAgain": "Try Again",
+    "aiConfidence": "AI Confidence:",
+    "translationAvailable": "Original caption is in {{language}}. Translation is available.",
+    "noStepsDetected": "No cooking steps detected in the caption.",
+    "generateWithAI": "Generate with AI",
+    "generatingSteps": "Generating steps...",
+    "stepsGenerated": "Steps generated successfully!",
+    "failedToGenerateSteps": "Failed to generate steps",
+    "cancel": "Cancel",
+    "importRecipe": "Import Recipe",
+    "viewOriginalCaption": "View original caption"
+  },
+  "extension": {
+    "title": "Chrome Extension",
+    "subtitle": "Sync your saved Instagram posts",
+    "getExtension": "Get the Extension",
+    "description": "The SavorPilot Chrome extension allows you to sync your saved Instagram posts directly to your account. Your session cookies are used securely to fetch your saved posts.",
+    "downloading": "Downloading...",
+    "downloadExtension": "Download Extension",
+    "downloadFailed": "Failed to download extension. Please try again.",
+    "installationSteps": "Installation Steps",
+    "steps": {
+      "download": {
+        "title": "Download Extension",
+        "description": "Click the button below to download the SavorPilot Chrome extension files."
+      },
+      "extract": {
+        "title": "Extract Files",
+        "description": "Unzip the downloaded file to a folder on your computer (e.g., Documents/SavorPilot-Extension)."
+      },
+      "openChrome": {
+        "title": "Open Chrome Extensions",
+        "description": "Open Chrome and go to chrome://extensions or click Menu → More Tools → Extensions."
+      },
+      "developerMode": {
+        "title": "Enable Developer Mode",
+        "description": "Toggle on \"Developer mode\" in the top-right corner of the Extensions page."
+      },
+      "loadExtension": {
+        "title": "Load Extension",
+        "description": "Click \"Load unpacked\" and select the folder where you extracted the extension files."
+      },
+      "pinExtension": {
+        "title": "Pin Extension",
+        "description": "Click the puzzle icon in Chrome toolbar and pin SavorPilot for easy access."
+      }
+    },
+    "howToUse": "How to Use",
+    "usageSteps": {
+      "step1": "Make sure you're logged into Instagram in Chrome",
+      "step2": "Make sure you're logged into SavorPilot in Chrome",
+      "step3": "Click the SavorPilot extension icon in your toolbar",
+      "step4": "Click \"Sync Saved Posts\" to import your saved posts",
+      "step5": "Your posts will appear on this page ready for import!"
+    },
+    "troubleshooting": "Troubleshooting",
+    "troubleshootingItems": {
+      "notLoggedInInstagram": "\"Not logged into Instagram\" - Refresh Instagram and try again",
+      "notLoggedInSavorPilot": "\"Not logged into SavorPilot\" - Make sure you're signed in here first",
+      "syncFailed": "\"Sync failed\" - Check your connection and try logging out/in"
+    },
+    "chromeHelp": "Chrome extension help",
+    "close": "Close",
+    "copyUrl": "Copy URL"
+  },
+  "card": {
+    "viewCaption": "Click to view full caption",
+    "previewCaption": "Preview caption",
+    "parse": "Parse",
+    "translate": "Translate",
+    "generateSteps": "Generate Steps",
+    "import": "Import",
+    "dismiss": "Dismiss",
+    "restore": "Restore"
+  },
+  "captionModal": {
+    "fullCaption": "Full Caption",
+    "translate": "Translate",
+    "translating": "Translating...",
+    "parse": "Parse with AI",
+    "parsing": "Parsing...",
+    "generateSteps": "Generate Steps",
+    "generatingSteps": "Generating...",
+    "import": "Import",
+    "dismiss": "Dismiss",
+    "restore": "Restore",
+    "likes": "likes",
+    "comments": "comments",
+    "postedOn": "Posted on",
+    "close": "Close"
+  }
+}

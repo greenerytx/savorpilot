@@ -1,0 +1,144 @@
+{
+  "butter": [
+    { "substitute": "coconut oil", "ratio": 1, "notes": "Use solid for baking, melted for cooking" },
+    { "substitute": "olive oil", "ratio": 0.75, "notes": "Best for savory dishes" },
+    { "substitute": "applesauce", "ratio": 0.5, "notes": "For baking, reduces fat, adds moisture" },
+    { "substitute": "Greek yogurt", "ratio": 0.5, "notes": "Adds moisture and protein" },
+    { "substitute": "avocado", "ratio": 1, "notes": "Mashed, great for baking" }
+  ],
+  "egg": [
+    { "substitute": "flax egg", "ratio": 1, "notes": "1 tbsp ground flax + 3 tbsp water, let sit 5 min" },
+    { "substitute": "chia egg", "ratio": 1, "notes": "1 tbsp chia seeds + 3 tbsp water, let sit 5 min" },
+    { "substitute": "mashed banana", "ratio": 0.25, "notes": "1/4 cup per egg, adds sweetness" },
+    { "substitute": "applesauce", "ratio": 0.25, "notes": "1/4 cup per egg, for baking" },
+    { "substitute": "silken tofu", "ratio": 0.25, "notes": "1/4 cup blended per egg" }
+  ],
+  "milk": [
+    { "substitute": "oat milk", "ratio": 1, "notes": "Creamy, good for baking" },
+    { "substitute": "almond milk", "ratio": 1, "notes": "Lighter, slightly nutty flavor" },
+    { "substitute": "coconut milk", "ratio": 1, "notes": "Richer, adds coconut flavor" },
+    { "substitute": "soy milk", "ratio": 1, "notes": "Protein-rich, neutral flavor" },
+    { "substitute": "water + butter", "ratio": 1, "notes": "1 cup water + 1 tbsp butter" }
+  ],
+  "heavy cream": [
+    { "substitute": "coconut cream", "ratio": 1, "notes": "Full-fat, great for whipping" },
+    { "substitute": "cashew cream", "ratio": 1, "notes": "Blend soaked cashews with water" },
+    { "substitute": "evaporated milk", "ratio": 1, "notes": "Less fat but similar texture" },
+    { "substitute": "Greek yogurt", "ratio": 0.75, "notes": "Tangy, works in sauces" }
+  ],
+  "sour cream": [
+    { "substitute": "Greek yogurt", "ratio": 1, "notes": "Slightly tangier, more protein" },
+    { "substitute": "cottage cheese", "ratio": 1, "notes": "Blend until smooth" },
+    { "substitute": "cashew cream", "ratio": 1, "notes": "Add lemon juice for tang" }
+  ],
+  "all-purpose flour": [
+    { "substitute": "almond flour", "ratio": 1, "notes": "Gluten-free, denser results" },
+    { "substitute": "oat flour", "ratio": 1, "notes": "Blend oats, slightly denser" },
+    { "substitute": "coconut flour", "ratio": 0.25, "notes": "Very absorbent, use 1/4 amount" },
+    { "substitute": "gluten-free flour blend", "ratio": 1, "notes": "1:1 substitute" }
+  ],
+  "sugar": [
+    { "substitute": "honey", "ratio": 0.75, "notes": "Reduce liquid in recipe slightly" },
+    { "substitute": "maple syrup", "ratio": 0.75, "notes": "Adds maple flavor" },
+    { "substitute": "coconut sugar", "ratio": 1, "notes": "Lower glycemic index" },
+    { "substitute": "stevia", "ratio": 0.003, "notes": "Very sweet, use sparingly" },
+    { "substitute": "date paste", "ratio": 0.67, "notes": "Blend dates with water" }
+  ],
+  "brown sugar": [
+    { "substitute": "white sugar + molasses", "ratio": 1, "notes": "1 cup sugar + 1 tbsp molasses" },
+    { "substitute": "coconut sugar", "ratio": 1, "notes": "Similar caramel flavor" },
+    { "substitute": "maple syrup", "ratio": 0.75, "notes": "Reduce liquid slightly" }
+  ],
+  "vegetable oil": [
+    { "substitute": "olive oil", "ratio": 1, "notes": "Stronger flavor, good for savory" },
+    { "substitute": "coconut oil", "ratio": 1, "notes": "Melted, slight coconut flavor" },
+    { "substitute": "avocado oil", "ratio": 1, "notes": "Neutral, high smoke point" },
+    { "substitute": "applesauce", "ratio": 0.5, "notes": "For baking, reduces fat" }
+  ],
+  "chicken broth": [
+    { "substitute": "vegetable broth", "ratio": 1, "notes": "Vegetarian alternative" },
+    { "substitute": "mushroom broth", "ratio": 1, "notes": "Rich umami flavor" },
+    { "substitute": "water + bouillon", "ratio": 1, "notes": "1 cup water + 1 cube/tsp" },
+    { "substitute": "white wine", "ratio": 0.5, "notes": "Mix with water 1:1" }
+  ],
+  "beef broth": [
+    { "substitute": "mushroom broth", "ratio": 1, "notes": "Best vegetarian substitute, rich umami" },
+    { "substitute": "vegetable broth + soy sauce", "ratio": 1, "notes": "Add 1 tbsp soy sauce per cup" },
+    { "substitute": "red wine", "ratio": 0.5, "notes": "Mix with water or broth" }
+  ],
+  "soy sauce": [
+    { "substitute": "coconut aminos", "ratio": 1, "notes": "Soy-free, slightly sweeter" },
+    { "substitute": "tamari", "ratio": 1, "notes": "Gluten-free soy sauce" },
+    { "substitute": "Worcestershire sauce", "ratio": 0.5, "notes": "Different flavor, use less" },
+    { "substitute": "liquid aminos", "ratio": 1, "notes": "Similar flavor, less sodium" }
+  ],
+  "lemon juice": [
+    { "substitute": "lime juice", "ratio": 1, "notes": "Slightly different citrus flavor" },
+    { "substitute": "white wine vinegar", "ratio": 0.5, "notes": "More acidic, use less" },
+    { "substitute": "apple cider vinegar", "ratio": 0.5, "notes": "Fruity acidity" },
+    { "substitute": "orange juice", "ratio": 1.5, "notes": "Sweeter, less acidic" }
+  ],
+  "garlic": [
+    { "substitute": "garlic powder", "ratio": 0.125, "notes": "1/8 tsp per clove" },
+    { "substitute": "garlic paste", "ratio": 0.5, "notes": "1/2 tsp per clove" },
+    { "substitute": "shallots", "ratio": 2, "notes": "Milder, use double amount" }
+  ],
+  "onion": [
+    { "substitute": "shallots", "ratio": 0.75, "notes": "Milder, sweeter flavor" },
+    { "substitute": "onion powder", "ratio": 0.03, "notes": "1 tbsp per medium onion" },
+    { "substitute": "leeks", "ratio": 1, "notes": "White and light green parts only" },
+    { "substitute": "green onions", "ratio": 1.5, "notes": "Milder, add at end" }
+  ],
+  "fresh herbs": [
+    { "substitute": "dried herbs", "ratio": 0.33, "notes": "Use 1/3 the amount of dried" }
+  ],
+  "buttermilk": [
+    { "substitute": "milk + lemon juice", "ratio": 1, "notes": "1 cup milk + 1 tbsp lemon, let sit 5 min" },
+    { "substitute": "milk + vinegar", "ratio": 1, "notes": "1 cup milk + 1 tbsp vinegar, let sit 5 min" },
+    { "substitute": "plain yogurt + milk", "ratio": 1, "notes": "Mix 3/4 cup yogurt + 1/4 cup milk" }
+  ],
+  "cream cheese": [
+    { "substitute": "Greek yogurt", "ratio": 1, "notes": "Drain excess liquid, tangier" },
+    { "substitute": "cashew cream cheese", "ratio": 1, "notes": "Blend soaked cashews with lemon" },
+    { "substitute": "silken tofu", "ratio": 1, "notes": "Blend until smooth, add lemon" }
+  ],
+  "mayonnaise": [
+    { "substitute": "Greek yogurt", "ratio": 1, "notes": "Tangier, lower fat" },
+    { "substitute": "avocado", "ratio": 1, "notes": "Mashed, creamy texture" },
+    { "substitute": "hummus", "ratio": 1, "notes": "Different flavor, good in sandwiches" }
+  ],
+  "cornstarch": [
+    { "substitute": "arrowroot powder", "ratio": 1, "notes": "Works similarly for thickening" },
+    { "substitute": "tapioca starch", "ratio": 1, "notes": "Slightly chewier texture" },
+    { "substitute": "all-purpose flour", "ratio": 2, "notes": "Use double the amount" }
+  ],
+  "baking powder": [
+    { "substitute": "baking soda + cream of tartar", "ratio": 1, "notes": "1/4 tsp soda + 1/2 tsp cream of tartar = 1 tsp" }
+  ],
+  "wine (cooking)": [
+    { "substitute": "grape juice + vinegar", "ratio": 1, "notes": "Mix with splash of vinegar" },
+    { "substitute": "chicken or vegetable broth", "ratio": 1, "notes": "Add splash of vinegar" },
+    { "substitute": "pomegranate juice", "ratio": 1, "notes": "For red wine substitute" }
+  ],
+  "rice": [
+    { "substitute": "cauliflower rice", "ratio": 1, "notes": "Low-carb, pulse cauliflower in food processor" },
+    { "substitute": "quinoa", "ratio": 1, "notes": "Higher protein, nuttier flavor" },
+    { "substitute": "bulgur", "ratio": 1, "notes": "Whole grain, chewy texture" }
+  ],
+  "pasta": [
+    { "substitute": "zucchini noodles", "ratio": 1, "notes": "Spiralize zucchini, low-carb" },
+    { "substitute": "spaghetti squash", "ratio": 1, "notes": "Roast and scrape strands" },
+    { "substitute": "shirataki noodles", "ratio": 1, "notes": "Very low calorie" }
+  ],
+  "bread crumbs": [
+    { "substitute": "crushed crackers", "ratio": 1, "notes": "Slightly different texture" },
+    { "substitute": "rolled oats", "ratio": 1, "notes": "Pulse in food processor" },
+    { "substitute": "almond flour", "ratio": 1, "notes": "Gluten-free option" },
+    { "substitute": "crushed pork rinds", "ratio": 1, "notes": "Keto-friendly" }
+  ],
+  "chocolate chips": [
+    { "substitute": "cacao nibs", "ratio": 1, "notes": "Less sweet, more bitter" },
+    { "substitute": "carob chips", "ratio": 1, "notes": "Caffeine-free alternative" },
+    { "substitute": "chopped dark chocolate", "ratio": 1, "notes": "Control sweetness level" }
+  ]
+}

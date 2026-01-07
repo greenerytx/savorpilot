@@ -1,0 +1,60 @@
+{
+  "title": "Collections",
+  "subtitle": "Organize your recipes into groups",
+  "actions": {
+    "smartCollection": "Smart Collection",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "search": {
+    "placeholder": "Search collections..."
+  },
+  "smart": {
+    "title": "Smart Collections",
+    "autoUpdated": "Auto-updated",
+    "tryTitle": "Try Smart Collections",
+    "tryDescription": "Smart collections automatically organize your recipes based on filters like category, cooking time, or difficulty.",
+    "settingUp": "Setting up...",
+    "setupDefaults": "Set up defaults",
+    "createCustom": "Create custom"
+  },
+  "manual": {
+    "title": "My Collections"
+  },
+  "empty": {
+    "title": "No collections yet",
+    "description": "Create your first collection to organize your recipes"
+  },
+  "card": {
+    "recipes": "{{count}} recipes",
+    "recipe": "{{count}} recipe",
+    "updated": "Updated {{date}}",
+    "public": "Public",
+    "private": "Private"
+  },
+  "create": {
+    "title": "Create Collection",
+    "nameLabel": "Collection Name *",
+    "namePlaceholder": "e.g., Weeknight Dinners",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "What's this collection about?",
+    "publicLabel": "Public collection",
+    "publicDescription": "Others can view this collection",
+    "cancel": "Cancel",
+    "create": "Create",
+    "creating": "Creating..."
+  },
+  "confirm": {
+    "deleteTitle": "Delete Collection",
+    "deleteMessage": "Are you sure you want to delete this collection? Recipes will not be deleted.",
+    "deleteButton": "Delete"
+  },
+  "errors": {
+    "failedToDelete": "Failed to delete collection"
+  },
+  "demo": {
+    "banner": "Demo Mode: Showing sample collections. Connect to backend to see real data."
+  }
+}

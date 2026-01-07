@@ -1,0 +1,30 @@
+{
+  "sidebar": {
+    "home": "الرئيسية",
+    "myRecipes": "وصفاتي",
+    "collections": "المجموعات",
+    "savedPosts": "المنشورات المحفوظة",
+    "youtube": "يوتيوب",
+    "shared": "المشاركة",
+    "dinnerCircles": "دوائر العشاء",
+    "import": "استيراد",
+    "fromUrl": "من رابط",
+    "planning": "التخطيط",
+    "mealPlanner": "مخطط الوجبات",
+    "shoppingList": "قائمة التسوق",
+    "partyMode": "وضع الحفلات",
+    "settings": "الإعدادات",
+    "signOut": "تسجيل الخروج"
+  },
+  "header": {
+    "searchPlaceholder": "البحث عن وصفات، مكونات...",
+    "notifications": "الإشعارات"
+  },
+  "actions": {
+    "addRecipe": "إضافة وصفة",
+    "generateRecipe": "إنشاء وصفة"
+  },
+  "brand": {
+    "name": "SavorPilot"
+  }
+}

@@ -1,0 +1,1 @@
+export { FlavorProfileCard } from './FlavorProfileCard';

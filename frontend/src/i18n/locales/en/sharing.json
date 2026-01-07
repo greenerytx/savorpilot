@@ -1,0 +1,38 @@
+{
+  "modal": {
+    "shareRecipe": "Share Recipe",
+    "shareCollection": "Share Collection",
+    "shareWithSomeone": "Share with someone",
+    "emailPlaceholder": "Enter email address...",
+    "share": "Share",
+    "done": "Done"
+  },
+  "options": {
+    "title": "Share Options",
+    "canEdit": "Can edit recipe",
+    "canReshare": "Can reshare",
+    "expiresOn": "Expires on (optional)"
+  },
+  "social": {
+    "orShareVia": "or share via",
+    "copyLink": "Copy Link",
+    "whatsapp": "WhatsApp",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "sendViaEmail": "Send via Email"
+  },
+  "sharedWith": {
+    "title": "Shared with ({{count}})",
+    "notShared": "Not shared with anyone yet",
+    "removeAccess": "Remove access",
+    "edit": "Edit",
+    "reshare": "Reshare",
+    "expires": "Expires {{date}}"
+  },
+  "messages": {
+    "sharedSuccess": "Shared successfully!",
+    "linkCopied": "Link copied!",
+    "failedToShare": "Failed to share. Please try again.",
+    "checkThisOut": "Check out this {{type}}: {{name}}"
+  }
+}

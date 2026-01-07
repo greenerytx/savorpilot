@@ -1,0 +1,60 @@
+{
+  "title": "المجموعات",
+  "subtitle": "نظّم وصفاتك في مجموعات",
+  "actions": {
+    "smartCollection": "مجموعة ذكية",
+    "newCollection": "مجموعة جديدة",
+    "createCollection": "إنشاء مجموعة",
+    "edit": "تعديل",
+    "delete": "حذف"
+  },
+  "search": {
+    "placeholder": "البحث في المجموعات..."
+  },
+  "smart": {
+    "title": "المجموعات الذكية",
+    "autoUpdated": "تحديث تلقائي",
+    "tryTitle": "جرّب المجموعات الذكية",
+    "tryDescription": "المجموعات الذكية تنظم وصفاتك تلقائياً بناءً على الفئة، وقت الطهي، أو الصعوبة.",
+    "settingUp": "جاري الإعداد...",
+    "setupDefaults": "إعداد الافتراضيات",
+    "createCustom": "إنشاء مخصص"
+  },
+  "manual": {
+    "title": "مجموعاتي"
+  },
+  "empty": {
+    "title": "لا توجد مجموعات بعد",
+    "description": "أنشئ مجموعتك الأولى لتنظيم وصفاتك"
+  },
+  "card": {
+    "recipes": "{{count}} وصفات",
+    "recipe": "{{count}} وصفة",
+    "updated": "تم التحديث {{date}}",
+    "public": "عام",
+    "private": "خاص"
+  },
+  "create": {
+    "title": "إنشاء مجموعة",
+    "nameLabel": "اسم المجموعة *",
+    "namePlaceholder": "مثال: عشاء أيام الأسبوع",
+    "descriptionLabel": "الوصف",
+    "descriptionPlaceholder": "عن ماذا هذه المجموعة؟",
+    "publicLabel": "مجموعة عامة",
+    "publicDescription": "يمكن للآخرين مشاهدة هذه المجموعة",
+    "cancel": "إلغاء",
+    "create": "إنشاء",
+    "creating": "جاري الإنشاء..."
+  },
+  "confirm": {
+    "deleteTitle": "حذف المجموعة",
+    "deleteMessage": "هل أنت متأكد من حذف هذه المجموعة؟ لن يتم حذف الوصفات.",
+    "deleteButton": "حذف"
+  },
+  "errors": {
+    "failedToDelete": "فشل حذف المجموعة"
+  },
+  "demo": {
+    "banner": "وضع العرض: عرض مجموعات تجريبية. اتصل بالخادم لعرض البيانات الحقيقية."
+  }
+}

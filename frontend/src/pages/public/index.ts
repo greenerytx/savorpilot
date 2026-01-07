@@ -1,0 +1,1 @@
+export { PublicRecipePage } from './PublicRecipePage';

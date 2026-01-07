@@ -1,0 +1,38 @@
+{
+  "modal": {
+    "shareRecipe": "مشاركة الوصفة",
+    "shareCollection": "مشاركة المجموعة",
+    "shareWithSomeone": "مشاركة مع شخص",
+    "emailPlaceholder": "أدخل البريد الإلكتروني...",
+    "share": "مشاركة",
+    "done": "تم"
+  },
+  "options": {
+    "title": "خيارات المشاركة",
+    "canEdit": "يمكنه التعديل",
+    "canReshare": "يمكنه إعادة المشاركة",
+    "expiresOn": "تنتهي في (اختياري)"
+  },
+  "social": {
+    "orShareVia": "أو شارك عبر",
+    "copyLink": "نسخ الرابط",
+    "whatsapp": "واتساب",
+    "twitter": "تويتر",
+    "facebook": "فيسبوك",
+    "sendViaEmail": "إرسال عبر البريد"
+  },
+  "sharedWith": {
+    "title": "مشارك مع ({{count}})",
+    "notShared": "لم تتم مشاركته مع أحد بعد",
+    "removeAccess": "إزالة الوصول",
+    "edit": "تعديل",
+    "reshare": "إعادة مشاركة",
+    "expires": "ينتهي {{date}}"
+  },
+  "messages": {
+    "sharedSuccess": "تمت المشاركة بنجاح!",
+    "linkCopied": "تم نسخ الرابط!",
+    "failedToShare": "فشلت المشاركة. يرجى المحاولة مرة أخرى.",
+    "checkThisOut": "شاهد {{type}}: {{name}}"
+  }
+}

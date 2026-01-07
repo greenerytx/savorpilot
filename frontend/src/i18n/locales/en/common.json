@@ -1,0 +1,52 @@
+{
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "saveChanges": "Save Changes",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "add": "Add",
+    "remove": "Remove",
+    "search": "Search",
+    "clear": "Clear",
+    "refresh": "Refresh",
+    "retry": "Retry"
+  },
+  "labels": {
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "language": "Language",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "and": "and"
+  },
+  "messages": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "noResults": "No results found",
+    "error": "An error occurred",
+    "success": "Success",
+    "saved": "Saved successfully",
+    "deleted": "Deleted successfully",
+    "updated": "Updated successfully",
+    "comingSoon": "Coming Soon"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email",
+    "minLength": "Must be at least {{min}} characters",
+    "maxLength": "Must be at most {{max}} characters"
+  }
+}

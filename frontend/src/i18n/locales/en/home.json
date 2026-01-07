@@ -1,0 +1,63 @@
+{
+  "greeting": {
+    "morning": "Good morning",
+    "afternoon": "Good afternoon",
+    "evening": "Good evening"
+  },
+  "hero": {
+    "title": "What shall we <gradient>cook tonight</gradient>?",
+    "addRecipe": "Add Recipe",
+    "aiSuggest": "AI Suggest"
+  },
+  "stats": {
+    "recipes": "Recipes",
+    "cooked": "Cooked",
+    "cuisines": "Cuisines",
+    "level": "Level {{level}}",
+    "titles": {
+      "beginner": "Beginner Cook",
+      "home": "Home Cook",
+      "homeChef": "Home Chef",
+      "skilled": "Skilled Chef",
+      "master": "Master Chef"
+    }
+  },
+  "flavorDna": {
+    "title": "Your Flavor DNA",
+    "subtitle": "Based on {{count}} recipes analyzed",
+    "fullProfile": "Full Profile",
+    "heat": "Heat",
+    "herbs": "Herbs",
+    "umami": "Umami",
+    "sweet": "Sweet",
+    "acid": "Acid",
+    "discoverMore": "Cook more to discover!"
+  },
+  "recentRecipes": {
+    "title": "Recent Recipes",
+    "viewAll": "View all",
+    "empty": {
+      "title": "No recipes yet",
+      "description": "Start building your collection by adding your first recipe",
+      "addFirst": "Add Your First Recipe"
+    }
+  },
+  "aiPilot": {
+    "title": "AI Pilot Suggestion",
+    "description": "Based on your flavor profile and recent activity...",
+    "tryNew": "Try something new!",
+    "personalized": "Personalized",
+    "generate": "Generate Recipe"
+  },
+  "pantry": {
+    "title": "Pantry Alerts",
+    "empty": "Track your pantry to get alerts for expiring ingredients",
+    "setup": "Set Up Pantry"
+  },
+  "quickActions": {
+    "scan": "Scan Recipe",
+    "whatToCook": "What to Cook?",
+    "import": "Import",
+    "fusionLab": "Fusion Lab"
+  }
+}

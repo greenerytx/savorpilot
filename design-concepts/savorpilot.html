@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SavorPilot - Your AI Co-Pilot in the Kitchen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+              950: '#1e1b4b',
+            },
+            coral: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+            },
+            teal: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+            slate: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              300: '#cbd5e1',
+              400: '#94a3b8',
+              500: '#64748b',
+              600: '#475569',
+              700: '#334155',
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#020617',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #4f46e5 0%, #f97316 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .nav-glow {
+      box-shadow: 0 0 40px rgba(99, 102, 241, 0.15);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
+    }
+    .compass-spin {
+      animation: spin 20s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .pulse-ring {
+      animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.1; transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-card nav-glow">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="relative w-10 h-10">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-500 to-coral-500 rounded-xl"></div>
+            <svg class="absolute inset-0 w-10 h-10 p-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+            </svg>
+          </div>
+          <span class="text-xl font-bold text-slate-900">Savor<span class="text-primary-600">Pilot</span></span>
+        </div>
+
+        <!-- Nav Links -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="#" class="px-4 py-2 text-sm font-medium text-primary-600 bg-primary-50 rounded-lg">Dashboard</a>
+          <a href="#" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition">Recipes</a>
+          <a href="#" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition">Collections</a>
+          <a href="#" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition">Flavor DNA</a>
+          <a href="#" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition">Pantry</a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-3">
+          <button class="p-2 text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+            </svg>
+          </button>
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-primary-500 to-coral-500 flex items-center justify-center text-white font-semibold text-sm">
+            JD
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <!-- Welcome Header -->
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold text-slate-900 mb-2">Good evening, John</h1>
+        <p class="text-slate-500">Your AI co-pilot is ready to guide your culinary journey</p>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <button class="group p-4 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl text-white card-hover">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+          </div>
+          <span class="font-semibold text-sm">Add Recipe</span>
+        </button>
+
+        <button class="group p-4 bg-white rounded-2xl border border-slate-200 card-hover">
+          <div class="w-10 h-10 bg-coral-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition">
+            <svg class="w-5 h-5 text-coral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <span class="font-semibold text-sm text-slate-700">What to Cook?</span>
+        </button>
+
+        <button class="group p-4 bg-white rounded-2xl border border-slate-200 card-hover">
+          <div class="w-10 h-10 bg-teal-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition">
+            <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <span class="font-semibold text-sm text-slate-700">Scan Recipe</span>
+        </button>
+
+        <button class="group p-4 bg-white rounded-2xl border border-slate-200 card-hover">
+          <div class="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <span class="font-semibold text-sm text-slate-700">AI Generate</span>
+        </button>
+      </div>
+
+      <!-- Main Dashboard Grid -->
+      <div class="grid lg:grid-cols-3 gap-6">
+        <!-- Left Column -->
+        <div class="lg:col-span-2 space-y-6">
+          <!-- Flavor DNA Card -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 card-hover">
+            <div class="flex items-center justify-between mb-6">
+              <div>
+                <h2 class="text-lg font-bold text-slate-900">Your Flavor DNA</h2>
+                <p class="text-sm text-slate-500">Based on 47 recipes cooked</p>
+              </div>
+              <button class="text-sm font-medium text-primary-600 hover:text-primary-700">View Full Profile</button>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div class="text-center">
+                <div class="relative w-16 h-16 mx-auto mb-2">
+                  <svg class="w-16 h-16 transform -rotate-90">
+                    <circle cx="32" cy="32" r="28" fill="none" stroke="#e2e8f0" stroke-width="4"/>
+                    <circle cx="32" cy="32" r="28" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="176" stroke-dashoffset="35" stroke-linecap="round"/>
+                  </svg>
+                  <span class="absolute inset-0 flex items-center justify-center text-sm font-bold text-slate-700">8/10</span>
+                </div>
+                <span class="text-xs font-medium text-slate-600">Heat</span>
+              </div>
+
+              <div class="text-center">
+                <div class="relative w-16 h-16 mx-auto mb-2">
+                  <svg class="w-16 h-16 transform -rotate-90">
+                    <circle cx="32" cy="32" r="28" fill="none" stroke="#e2e8f0" stroke-width="4"/>
+                    <circle cx="32" cy="32" r="28" fill="none" stroke="#eab308" stroke-width="4" stroke-dasharray="176" stroke-dashoffset="88" stroke-linecap="round"/>
+                  </svg>
+                  <span class="absolute inset-0 flex items-center justify-center text-sm font-bold text-slate-700">5/10</span>
+                </div>
+                <span class="text-xs font-medium text-slate-600">Sweet</span>
+              </div>
+
+              <div class="text-center">
+                <div class="relative w-16 h-16 mx-auto mb-2">
+                  <svg class="w-16 h-16 transform -rotate-90">
+                    <circle cx="32" cy="32" r="28" fill="none" stroke="#e2e8f0" stroke-width="4"/>
+                    <circle cx="32" cy="32" r="28" fill="none" stroke="#22c55e" stroke-width="4" stroke-dasharray="176" stroke-dashoffset="18" stroke-linecap="round"/>
+                  </svg>
+                  <span class="absolute inset-0 flex items-center justify-center text-sm font-bold text-slate-700">9/10</span>
+                </div>
+                <span class="text-xs font-medium text-slate-600">Herbs</span>
+              </div>
+
+              <div class="text-center">
+                <div class="relative w-16 h-16 mx-auto mb-2">
+                  <svg class="w-16 h-16 transform -rotate-90">
+                    <circle cx="32" cy="32" r="28" fill="none" stroke="#e2e8f0" stroke-width="4"/>
+                    <circle cx="32" cy="32" r="28" fill="none" stroke="#8b5cf6" stroke-width="4" stroke-dasharray="176" stroke-dashoffset="53" stroke-linecap="round"/>
+                  </svg>
+                  <span class="absolute inset-0 flex items-center justify-center text-sm font-bold text-slate-700">7/10</span>
+                </div>
+                <span class="text-xs font-medium text-slate-600">Umami</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-100">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-xs font-medium text-slate-500">Top Ingredients:</span>
+                <span class="px-2 py-1 bg-coral-100 text-coral-700 text-xs font-medium rounded-full">Garlic</span>
+                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded-full">Lemon</span>
+                <span class="px-2 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-full">Parmesan</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full">Chili</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Recipes -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-6">
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-lg font-bold text-slate-900">Recent Recipes</h2>
+              <button class="text-sm font-medium text-primary-600 hover:text-primary-700">View All</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <!-- Recipe Card 1 -->
+              <div class="group relative rounded-xl overflow-hidden card-hover cursor-pointer">
+                <div class="aspect-[4/3] bg-gradient-to-br from-coral-400 to-coral-600">
+                  <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Recipe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="px-2 py-0.5 bg-white/20 backdrop-blur text-white text-xs font-medium rounded-full">Italian</span>
+                    <span class="text-white/80 text-xs">25 min</span>
+                  </div>
+                  <h3 class="font-semibold text-white">Spicy Vodka Rigatoni</h3>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span class="text-xs text-teal-400 font-medium">96% Flavor Match</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recipe Card 2 -->
+              <div class="group relative rounded-xl overflow-hidden card-hover cursor-pointer">
+                <div class="aspect-[4/3] bg-gradient-to-br from-teal-400 to-teal-600">
+                  <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Recipe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="px-2 py-0.5 bg-white/20 backdrop-blur text-white text-xs font-medium rounded-full">Thai</span>
+                    <span class="text-white/80 text-xs">30 min</span>
+                  </div>
+                  <h3 class="font-semibold text-white">Thai Basil Chicken</h3>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span class="text-xs text-teal-400 font-medium">94% Flavor Match</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-6">
+          <!-- AI Pilot Card -->
+          <div class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-6 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 opacity-10">
+              <svg class="w-full h-full compass-spin" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
+              </svg>
+            </div>
+            <div class="relative">
+              <div class="flex items-center gap-2 mb-4">
+                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                </div>
+                <span class="font-semibold">AI Pilot</span>
+              </div>
+              <p class="text-white/90 text-sm mb-4">Based on your pantry and taste profile, I suggest trying:</p>
+              <div class="bg-white/10 rounded-xl p-3 mb-4">
+                <p class="font-medium">Garlic Butter Shrimp Pasta</p>
+                <p class="text-xs text-white/70 mt-1">Uses ingredients expiring soon</p>
+              </div>
+              <button class="w-full py-2.5 bg-white text-primary-600 font-semibold rounded-xl hover:bg-white/90 transition">
+                Let's Cook This
+              </button>
+            </div>
+          </div>
+
+          <!-- Pantry Alerts -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="font-bold text-slate-900">Pantry Alerts</h3>
+              <span class="w-5 h-5 bg-coral-500 text-white text-xs font-bold rounded-full flex items-center justify-center">3</span>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 p-3 bg-red-50 rounded-xl">
+                <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm font-medium text-slate-900">Heavy Cream</p>
+                  <p class="text-xs text-red-600">Expires tomorrow</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 bg-amber-50 rounded-xl">
+                <div class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm font-medium text-slate-900">Spinach</p>
+                  <p class="text-xs text-amber-600">Expires in 2 days</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 bg-amber-50 rounded-xl">
+                <div class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm font-medium text-slate-900">Chicken Breast</p>
+                  <p class="text-xs text-amber-600">Expires in 3 days</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="w-full mt-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-xl transition">
+              View Rescue Recipes
+            </button>
+          </div>
+
+          <!-- Weekly Stats -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-6">
+            <h3 class="font-bold text-slate-900 mb-4">This Week</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="text-center p-3 bg-slate-50 rounded-xl">
+                <p class="text-2xl font-bold text-primary-600">5</p>
+                <p class="text-xs text-slate-500">Recipes Cooked</p>
+              </div>
+              <div class="text-center p-3 bg-slate-50 rounded-xl">
+                <p class="text-2xl font-bold text-teal-600">3</p>
+                <p class="text-xs text-slate-500">New Cuisines</p>
+              </div>
+              <div class="text-center p-3 bg-slate-50 rounded-xl">
+                <p class="text-2xl font-bold text-coral-600">$47</p>
+                <p class="text-xs text-slate-500">Saved on Groceries</p>
+              </div>
+              <div class="text-center p-3 bg-slate-50 rounded-xl">
+                <p class="text-2xl font-bold text-slate-700">12</p>
+                <p class="text-xs text-slate-500">XP Earned</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "title": "الإشعارات",
+  "actions": {
+    "markAllRead": "تعيين الكل كمقروء",
+    "deleteRead": "حذف الإشعارات المقروءة",
+    "dismiss": "إخفاء",
+    "delete": "حذف الإشعار"
+  },
+  "status": {
+    "inProgress": "قيد التنفيذ",
+    "recentActivity": "النشاط الأخير"
+  },
+  "empty": {
+    "title": "لا توجد إشعارات بعد",
+    "description": "عندما يشاركك أحد وصفة، ستظهر هنا"
+  },
+  "time": {
+    "justNow": "الآن",
+    "minutesAgo": "منذ {{count}} دقيقة",
+    "hoursAgo": "منذ {{count}} ساعة",
+    "daysAgo": "منذ {{count}} يوم"
+  },
+  "jobs": {
+    "importComplete": "اكتمل الاستيراد",
+    "importFailed": "فشل الاستيراد",
+    "importingRecipes": "جاري استيراد الوصفات",
+    "starting": "جاري البدء...",
+    "successfullyImported": "تم استيراد {{count}} وصفة بنجاح",
+    "successfullyImported_plural": "تم استيراد {{count}} وصفات بنجاح",
+    "failedCount": "({{count}} فشل)",
+    "failedToImport": "فشل استيراد الوصفات",
+    "postsProcessed": "تمت معالجة {{processed}} من {{total}}",
+    "imported": "{{count}} مستورد",
+    "failed": "{{count}} فشل"
+  }
+}

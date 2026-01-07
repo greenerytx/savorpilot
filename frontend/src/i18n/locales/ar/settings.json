@@ -1,0 +1,65 @@
+{
+  "title": "الإعدادات",
+  "tabs": {
+    "profile": "الملف الشخصي",
+    "preferences": "التفضيلات",
+    "notifications": "الإشعارات",
+    "security": "الأمان"
+  },
+  "profile": {
+    "title": "معلومات الملف الشخصي",
+    "subtitle": "تحديث بياناتك الشخصية",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "avatar": "الصورة الشخصية",
+    "changeAvatar": "تغيير الصورة",
+    "memberSince": "عضو منذ"
+  },
+  "preferences": {
+    "title": "التفضيلات",
+    "subtitle": "تخصيص تجربتك",
+    "language": "اللغة",
+    "languageDescription": "اختر لغتك المفضلة",
+    "defaultServings": "عدد الحصص الافتراضي",
+    "defaultServingsDescription": "عدد الحصص الافتراضي للوصفات الجديدة",
+    "preferredUnits": "وحدات القياس",
+    "preferredUnitsDescription": "اختر نظام القياس المفضل",
+    "metric": "متري",
+    "imperial": "إمبراطوري",
+    "theme": "المظهر",
+    "themeDescription": "اختر المظهر المفضل",
+    "themeLight": "فاتح",
+    "themeDark": "داكن",
+    "themeSystem": "النظام"
+  },
+  "notifications": {
+    "title": "إعدادات الإشعارات",
+    "subtitle": "إدارة طريقة استلام الإشعارات",
+    "emailNotifications": "إشعارات البريد الإلكتروني",
+    "emailNotificationsDescription": "استلام تحديثات عبر البريد الإلكتروني",
+    "weeklyDigest": "الملخص الأسبوعي",
+    "weeklyDigestDescription": "احصل على ملخص أسبوعي للوصفات الجديدة"
+  },
+  "security": {
+    "title": "الأمان",
+    "changePassword": "تغيير كلمة المرور",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور الجديدة",
+    "updatePassword": "تحديث كلمة المرور",
+    "dangerZone": "منطقة الخطر",
+    "deleteAccount": "حذف الحساب",
+    "deleteAccountDescription": "حذف حسابك وجميع بياناتك نهائياً"
+  },
+  "messages": {
+    "profileUpdated": "تم تحديث الملف الشخصي بنجاح",
+    "preferencesUpdated": "تم تحديث التفضيلات بنجاح",
+    "passwordChanged": "تم تغيير كلمة المرور بنجاح",
+    "notificationsSaved": "تم حفظ إعدادات الإشعارات"
+  },
+  "languages": {
+    "en": "English",
+    "ar": "العربية"
+  }
+}

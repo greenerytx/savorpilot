@@ -1,0 +1,65 @@
+{
+  "title": "Settings",
+  "tabs": {
+    "profile": "Profile",
+    "preferences": "Preferences",
+    "notifications": "Notifications",
+    "security": "Security"
+  },
+  "profile": {
+    "title": "Profile Information",
+    "subtitle": "Update your personal details",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "avatar": "Avatar",
+    "changeAvatar": "Change avatar",
+    "memberSince": "Member since"
+  },
+  "preferences": {
+    "title": "Preferences",
+    "subtitle": "Customize your experience",
+    "language": "Language",
+    "languageDescription": "Select your preferred language",
+    "defaultServings": "Default Servings",
+    "defaultServingsDescription": "Default number of servings for new recipes",
+    "preferredUnits": "Preferred Units",
+    "preferredUnitsDescription": "Choose your measurement system",
+    "metric": "Metric",
+    "imperial": "Imperial",
+    "theme": "Theme",
+    "themeDescription": "Choose your preferred theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System"
+  },
+  "notifications": {
+    "title": "Notification Settings",
+    "subtitle": "Manage how you receive notifications",
+    "emailNotifications": "Email Notifications",
+    "emailNotificationsDescription": "Receive email updates about your recipes",
+    "weeklyDigest": "Weekly Recipe Digest",
+    "weeklyDigestDescription": "Get a weekly summary of new recipes and tips"
+  },
+  "security": {
+    "title": "Security",
+    "changePassword": "Change Password",
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm new password",
+    "updatePassword": "Update Password",
+    "dangerZone": "Danger Zone",
+    "deleteAccount": "Delete Account",
+    "deleteAccountDescription": "Permanently delete your account and all data"
+  },
+  "messages": {
+    "profileUpdated": "Profile updated successfully",
+    "preferencesUpdated": "Preferences updated successfully",
+    "passwordChanged": "Password changed successfully",
+    "notificationsSaved": "Notification settings saved"
+  },
+  "languages": {
+    "en": "English",
+    "ar": "العربية"
+  }
+}

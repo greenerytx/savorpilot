@@ -1,0 +1,63 @@
+{
+  "greeting": {
+    "morning": "صباح الخير",
+    "afternoon": "مساء الخير",
+    "evening": "مساء الخير"
+  },
+  "hero": {
+    "title": "ماذا <gradient>نطبخ الليلة</gradient>؟",
+    "addRecipe": "إضافة وصفة",
+    "aiSuggest": "اقتراح الذكاء"
+  },
+  "stats": {
+    "recipes": "الوصفات",
+    "cooked": "مطبوخ",
+    "cuisines": "المطابخ",
+    "level": "المستوى {{level}}",
+    "titles": {
+      "beginner": "طباخ مبتدئ",
+      "home": "طباخ منزلي",
+      "homeChef": "شيف منزلي",
+      "skilled": "شيف ماهر",
+      "master": "شيف محترف"
+    }
+  },
+  "flavorDna": {
+    "title": "الحمض النووي لنكهتك",
+    "subtitle": "بناءً على {{count}} وصفة تم تحليلها",
+    "fullProfile": "الملف الكامل",
+    "heat": "الحرارة",
+    "herbs": "الأعشاب",
+    "umami": "أومامي",
+    "sweet": "الحلاوة",
+    "acid": "الحموضة",
+    "discoverMore": "اطبخ أكثر لاكتشاف المزيد!"
+  },
+  "recentRecipes": {
+    "title": "الوصفات الأخيرة",
+    "viewAll": "عرض الكل",
+    "empty": {
+      "title": "لا توجد وصفات بعد",
+      "description": "ابدأ في بناء مجموعتك بإضافة أول وصفة لك",
+      "addFirst": "أضف أول وصفة"
+    }
+  },
+  "aiPilot": {
+    "title": "اقتراح الطيار الآلي",
+    "description": "بناءً على ملف نكهتك ونشاطك الأخير...",
+    "tryNew": "جرب شيئاً جديداً!",
+    "personalized": "مخصص",
+    "generate": "إنشاء وصفة"
+  },
+  "pantry": {
+    "title": "تنبيهات المخزن",
+    "empty": "تتبع مخزنك للحصول على تنبيهات المكونات التي ستنتهي صلاحيتها",
+    "setup": "إعداد المخزن"
+  },
+  "quickActions": {
+    "scan": "مسح وصفة",
+    "whatToCook": "ماذا أطبخ؟",
+    "import": "استيراد",
+    "fusionLab": "مختبر الدمج"
+  }
+}

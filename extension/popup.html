@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GramGrab</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 13.87A4 4 0 0 1 7.41 6.6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6.6 4 4 0 0 1 18 13.87V21H6z"/>
+          <line x1="6" y1="17" x2="18" y2="17"/>
+        </svg>
+      </div>
+      <h1>GramGrab</h1>
+    </header>
+
+    <!-- Status Display -->
+    <div id="status-container" class="status-container">
+      <div id="status-icon" class="status-icon"></div>
+      <p id="status-message" class="status-message">Checking status...</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+      <!-- Instagram Status -->
+      <div id="instagram-status" class="card">
+        <div class="card-icon instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <h3>Instagram</h3>
+          <p id="instagram-status-text">Not logged in</p>
+        </div>
+        <div id="instagram-check" class="check-icon hidden">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20,6 9,17 4,12"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- GramGrab Status -->
+      <div id="gramgrab-status" class="card">
+        <div class="card-icon gramgrab">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 13.87A4 4 0 0 1 7.41 6.6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6.6 4 4 0 0 1 18 13.87V21H6z"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <h3>GramGrab</h3>
+          <p id="gramgrab-status-text">Not logged in</p>
+        </div>
+        <div id="gramgrab-check" class="check-icon hidden">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20,6 9,17 4,12"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Collection Selector -->
+      <div id="collection-selector" class="collection-selector hidden">
+        <div class="collection-header">
+          <label class="selector-label">Sync from:</label>
+          <div class="collection-actions">
+            <button type="button" id="select-all-btn" class="collection-action-btn">Select All</button>
+            <button type="button" id="unselect-all-btn" class="collection-action-btn">Unselect All</button>
+          </div>
+        </div>
+        <div id="collection-list" class="collection-list">
+          <!-- Collections will be populated here -->
+        </div>
+      </div>
+
+      <!-- Collections Loading -->
+      <div id="collections-loading" class="collections-loading hidden">
+        <div class="loading-spinner"></div>
+        <span>Loading collections...</span>
+      </div>
+
+      <!-- Force Refresh Option -->
+      <label class="force-refresh-option">
+        <input type="checkbox" id="force-refresh-checkbox">
+        <span class="checkbox-custom"></span>
+        <span class="option-text">
+          <strong>Full Scan</strong>
+          <small>Check all posts (slower, use when missing posts)</small>
+        </span>
+      </label>
+
+      <!-- Sync Button -->
+      <button id="sync-btn" class="sync-btn" disabled>
+        <svg class="sync-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="23,4 23,10 17,10"/>
+          <polyline points="1,20 1,14 7,14"/>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+        </svg>
+        <span>Sync Saved Posts</span>
+      </button>
+
+      <!-- Progress -->
+      <div id="progress-container" class="progress-container hidden">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <p id="progress-text" class="progress-text">Syncing...</p>
+        <div id="progress-details" class="progress-details">
+          <span id="fetched-count">0</span> fetched
+          <span class="separator">•</span>
+          <span id="new-progress-count">0</span> new
+        </div>
+        <button id="cancel-btn" class="cancel-btn">Cancel</button>
+      </div>
+
+      <!-- Result -->
+      <div id="result-container" class="result-container hidden">
+        <div class="result-stats">
+          <div class="stat">
+            <span id="new-count" class="stat-number">0</span>
+            <span class="stat-label">New Posts</span>
+          </div>
+          <div class="stat">
+            <span id="skip-count" class="stat-number">0</span>
+            <span class="stat-label">Skipped</span>
+          </div>
+        </div>
+        <a id="view-posts-link" href="#" class="view-link">View in GramGrab →</a>
+      </div>
+    </div>
+
+    <!-- Error Display -->
+    <div id="error-container" class="error-container hidden">
+      <div class="error-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <p id="error-message" class="error-message">An error occurred</p>
+      <button id="retry-btn" class="retry-btn">Try Again</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="https://gramgrab.com/help/extension" target="_blank">Help</a>
+      <span>•</span>
+      <a href="https://gramgrab.com" target="_blank">Open GramGrab</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

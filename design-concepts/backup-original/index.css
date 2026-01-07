@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   GramGrab Design System
+   Modern Minimal + Warm Tones
+   ======================================== */
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-cream-50 text-neutral-900 font-sans;
+  }
+
+  /* RTL Support - Arabic font */
+  [dir="rtl"] body {
+    font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif;
+  }
+
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] h5,
+  [dir="rtl"] h6 {
+    font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-500;
+  }
+
+  ::selection {
+    @apply bg-primary-100 text-primary-900;
+  }
+}
+
+/* Component classes */
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl border border-neutral-100 shadow-soft;
+  }
+
+  .card-elevated {
+    @apply bg-white rounded-2xl shadow-soft-md;
+  }
+
+  .card-interactive {
+    @apply bg-white rounded-2xl border border-neutral-100 shadow-soft transition-all cursor-pointer;
+    @apply hover:shadow-soft-md hover:border-neutral-200;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-medium text-sm rounded-xl px-4 py-2.5 transition-all;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600;
+  }
+
+  .btn-secondary {
+    @apply bg-neutral-100 text-neutral-700 hover:bg-neutral-200;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border border-neutral-300 text-neutral-700 hover:bg-neutral-50;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-neutral-600 hover:bg-neutral-100;
+  }
+
+  .input {
+    @apply w-full px-4 py-2.5 text-sm bg-white border border-neutral-200 rounded-xl transition-all;
+    @apply placeholder:text-neutral-400;
+    @apply focus:outline-none focus:border-transparent focus:ring-2 focus:ring-primary-500;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 text-xs font-medium rounded-full;
+  }
+
+  .badge-primary {
+    @apply bg-primary-100 text-primary-700;
+  }
+
+  .badge-secondary {
+    @apply bg-neutral-100 text-neutral-600;
+  }
+
+  .badge-success {
+    @apply bg-green-50 text-green-700;
+  }
+
+  .badge-warning {
+    @apply bg-amber-50 text-amber-700;
+  }
+
+  .badge-error {
+    @apply bg-red-50 text-red-600;
+  }
+
+  .badge-sage {
+    @apply bg-sage-100 text-sage-700;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-2 px-3 py-2 text-sm font-medium text-neutral-600 rounded-lg transition-all;
+    @apply hover:bg-neutral-100 hover:text-neutral-900;
+  }
+
+  .nav-link-active {
+    @apply bg-primary-50 text-primary-600;
+  }
+
+  .container-app {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  .container-narrow {
+    @apply max-w-3xl mx-auto px-4;
+  }
+
+  .recipe-card {
+    @apply relative bg-white rounded-2xl overflow-hidden border border-neutral-100 shadow-soft transition-all;
+    @apply hover:shadow-soft-lg hover:border-neutral-200;
+  }
+
+  .skeleton {
+    @apply bg-neutral-200 rounded-lg animate-pulse;
+  }
+
+  .divider {
+    @apply h-px bg-neutral-200;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-500 to-amber-500 bg-clip-text text-transparent;
+  }
+
+  .shadow-soft {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  }
+
+  .shadow-soft-md {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  }
+
+  .shadow-soft-lg {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+  }
+
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .aspect-recipe {
+    aspect-ratio: 4/3;
+  }
+
+  /* Dialog and Toast animations */
+  .animate-fade-in {
+    animation: fadeIn 0.15s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.2s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+/* ========================================
+   Print Styles - ULTRA COMPACT
+   Fits recipe on 1 page if possible
+   ======================================== */
+@media print {
+  /* Reset page - minimal margins */
+  @page {
+    size: A4;
+    margin: 0.7cm;
+  }
+
+  /* Hide non-essential elements */
+  .no-print,
+  header,
+  nav,
+  aside,
+  footer,
+  button,
+  .btn,
+  [role="navigation"],
+  [data-sidebar],
+  .toast-container,
+  .fixed,
+  svg,
+  .lucide,
+  iframe,
+  video {
+    display: none !important;
+  }
+
+  /* Reset layout */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 8pt !important;
+    line-height: 1.15 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  .ps-64 {
+    padding-inline-start: 0 !important;
+  }
+
+  /* Main content full width */
+  main {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .max-w-5xl,
+  .max-w-7xl,
+  .max-w-3xl {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Kill all spacing */
+  .space-y-6,
+  .space-y-4,
+  .space-y-3,
+  .gap-6,
+  .gap-4 {
+    margin: 0 !important;
+    gap: 0 !important;
+  }
+
+  .space-y-6 > *,
+  .space-y-4 > *,
+  .space-y-3 > * {
+    margin-top: 1px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .p-6, .p-4, .p-8, .py-4 {
+    padding: 1px !important;
+  }
+
+  .mb-4, .mb-3, .mb-2, .mt-4, .mt-3, .mt-2 {
+    margin: 0 !important;
+  }
+
+  /* Hero section - inline layout */
+  .grid.md\:grid-cols-2 {
+    display: flex !important;
+    gap: 0.3cm !important;
+    align-items: flex-start !important;
+  }
+
+  /* Image - tiny thumbnail */
+  .aspect-\[4\/3\] {
+    aspect-ratio: auto !important;
+    height: 3cm !important;
+    width: 4cm !important;
+    min-width: 4cm !important;
+    max-width: 4cm !important;
+    max-height: 3cm !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    display: block !important;
+    border: 1px solid #999 !important;
+  }
+
+  img {
+    display: block !important;
+    width: 4cm !important;
+    height: 3cm !important;
+    max-width: 4cm !important;
+    max-height: 3cm !important;
+    object-fit: cover !important;
+  }
+
+  /* Info section next to image */
+  .aspect-\[4\/3\] + .space-y-4 {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  /* Remove any hidden states that might affect print */
+  .print\:block,
+  .hidden.print\:block,
+  h2.hidden.print\:block,
+  h2.hidden,
+  [class*="hidden"][class*="print:block"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Force show ALL tab content sections in print */
+  .min-h-\[400px\] {
+    min-height: 0 !important;
+  }
+
+  .min-h-\[400px\] > div,
+  .min-h-\[400px\] > .hidden,
+  .print-section,
+  [data-print-show],
+  .print-section.hidden,
+  [data-print-show].hidden,
+  div.hidden.print-section,
+  div[data-print-show].hidden,
+  .hidden.print-section,
+  .hidden[data-print-show] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+    max-height: none !important;
+  }
+
+  /* Section separation */
+  .print-section {
+    margin-top: 0.4cm !important;
+    padding-top: 0.2cm !important;
+    border-top: 1px solid #ccc !important;
+  }
+
+  .print-section:first-child {
+    margin-top: 0 !important;
+    border-top: none !important;
+  }
+
+  /* Cards - no decoration */
+  .card,
+  .card-elevated,
+  .card-interactive,
+  [class*="rounded-2xl"],
+  [class*="rounded-xl"],
+  [class*="rounded-lg"] {
+    display: block !important;
+    visibility: visible !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Typography - ultra compact */
+  h1 {
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    margin: 0 0 2px 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  h2 {
+    font-size: 9pt !important;
+    font-weight: bold !important;
+    margin: 4px 0 2px 0 !important;
+    padding: 0 0 1px 0 !important;
+    border-bottom: 1px solid #000 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    font-size: 8pt !important;
+    font-weight: bold !important;
+    margin: 2px 0 1px 0 !important;
+  }
+
+  p {
+    font-size: 7pt !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+  }
+
+  /* Recipe description - hide if long */
+  .text-neutral-600:not(li span) {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    font-size: 7pt !important;
+  }
+
+  /* Quick stats - inline and compact */
+  .grid.grid-cols-3 {
+    display: flex !important;
+    gap: 0.5cm !important;
+    font-size: 7pt !important;
+    border: none !important;
+    padding: 2px 0 !important;
+  }
+
+  .grid.grid-cols-3 > div {
+    text-align: left !important;
+  }
+
+  /* Ingredients list - single column, compact */
+  ul {
+    list-style: disc !important;
+    list-style-position: inside !important;
+    padding: 0 !important;
+    margin: 2px 0 !important;
+    columns: 1 !important;
+  }
+
+  ul li,
+  .space-y-3 li {
+    font-size: 7pt !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Hide ingredient checkboxes */
+  li .w-5.h-5,
+  li .mt-0\.5 {
+    display: none !important;
+  }
+
+  /* Show ingredient text inline */
+  li span,
+  li .flex-1 {
+    display: inline !important;
+  }
+
+  /* Steps - numbered list, no cards */
+  .space-y-4 > .card,
+  .space-y-4 > div[class*="cursor-pointer"] {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 2px !important;
+  }
+
+  /* Step layout - keep flex for inline number + text */
+  .space-y-4 > div .flex.gap-4 {
+    display: flex !important;
+    gap: 4px !important;
+    align-items: flex-start !important;
+  }
+
+  /* Step numbers - compact circle */
+  .w-8.h-8.rounded-full {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 14px !important;
+    min-width: 14px !important;
+    height: 14px !important;
+    background: none !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 8pt !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .w-8.h-8.rounded-full::after {
+    content: "." !important;
+  }
+
+  /* Step text - inline with number */
+  .flex.gap-4 > .flex-1 {
+    flex: 1 !important;
+  }
+
+  .flex.gap-4 > .flex-1 > p,
+  .flex-1 p.text-neutral-700 {
+    display: inline !important;
+    font-size: 7pt !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Hide step duration/tips in compact mode */
+  .flex.items-center.gap-4.mt-2,
+  .mt-2.text-sm.text-amber-600,
+  .flex-1 > .flex.items-center,
+  .flex-1 > p.mt-2 {
+    display: none !important;
+  }
+
+  /* Hide all badges */
+  .badge,
+  [class*="badge-"] {
+    display: none !important;
+  }
+
+  /* Hide checkboxes */
+  input[type="checkbox"] {
+    display: none !important;
+  }
+
+  /* Ensure all text is black */
+  * {
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* Source URL - compact */
+  a[href^="http"] {
+    font-size: 6pt !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 5pt;
+    word-break: break-all;
+  }
+
+  /* Hide colorful elements */
+  [class*="bg-gradient"],
+  [class*="bg-primary"],
+  [class*="bg-amber"],
+  [class*="bg-blue"],
+  [class*="bg-green"],
+  [class*="bg-rose"],
+  [class*="bg-orange"],
+  [class*="bg-purple"],
+  [class*="bg-pink"],
+  [class*="bg-violet"] {
+    background: transparent !important;
+  }
+
+  /* Hide border decorations */
+  .border-y {
+    border: none !important;
+    padding: 2px 0 !important;
+  }
+
+  /* Nutrition - keep compact label visible */
+  .border.border-black {
+    border: 1px solid black !important;
+    background: white !important;
+    padding: 2px !important;
+    margin-top: 4px !important;
+  }
+
+  /* Hide notes if empty */
+  .text-neutral-400.italic {
+    display: none !important;
+  }
+
+  /* Show notes only if has content */
+  .text-neutral-600:not(.italic) {
+    font-size: 7pt !important;
+  }
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlavorThread - Weaving Your Unique Flavor Story</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            plum: {
+              50: '#faf5ff',
+              100: '#f3e8ff',
+              200: '#e9d5ff',
+              300: '#d8b4fe',
+              400: '#c084fc',
+              500: '#a855f7',
+              600: '#9333ea',
+              700: '#7c3aed',
+              800: '#6b21a8',
+              900: '#581c87',
+              950: '#3b0764',
+            },
+            gold: {
+              50: '#fefce8',
+              100: '#fef9c3',
+              200: '#fef08a',
+              300: '#fde047',
+              400: '#facc15',
+              500: '#eab308',
+              600: '#ca8a04',
+              700: '#a16207',
+              800: '#854d0e',
+              900: '#713f12',
+            },
+            rose: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+            },
+            cream: {
+              50: '#fffef7',
+              100: '#fefcf0',
+              200: '#fdf8e1',
+              300: '#fcf3cf',
+              400: '#f9e9a8',
+            },
+            warm: {
+              50: '#fdfaf7',
+              100: '#faf4ed',
+              200: '#f5e6d8',
+              300: '#edd4be',
+              400: '#e0b795',
+            }
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #7c3aed 0%, #eab308 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .woven-bg {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Cpath d='M30 0v60M0 30h60' stroke='%239333ea' stroke-width='0.5' opacity='0.05'/%3E%3C/svg%3E");
+    }
+    .thread-pattern {
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(147, 51, 234, 0.03) 2px,
+        rgba(147, 51, 234, 0.03) 4px
+      );
+    }
+    .card-elegant {
+      background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
+      backdrop-filter: blur(10px);
+    }
+    .dna-helix {
+      animation: dna-rotate 10s linear infinite;
+    }
+    @keyframes dna-rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .shimmer {
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 2s infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+  </style>
+</head>
+<body class="bg-cream-50 min-h-screen woven-bg">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream-50/90 backdrop-blur-xl border-b border-plum-100/50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="relative w-10 h-10">
+            <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none">
+              <path d="M20 5C20 5 8 12 8 20C8 28 14 35 20 35C26 35 32 28 32 20C32 12 20 5 20 5Z" stroke="url(#thread-gradient)" stroke-width="2" fill="none"/>
+              <path d="M20 10C20 10 12 15 12 20C12 25 16 30 20 30C24 30 28 25 28 20C28 15 20 10 20 10Z" stroke="url(#thread-gradient)" stroke-width="2" fill="none" opacity="0.6"/>
+              <circle cx="20" cy="20" r="3" fill="url(#thread-gradient)"/>
+              <defs>
+                <linearGradient id="thread-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#7c3aed"/>
+                  <stop offset="100%" style="stop-color:#eab308"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <span class="text-xl font-display font-semibold">
+            <span class="text-plum-700">Flavor</span><span class="text-gold-600">Thread</span>
+          </span>
+        </div>
+
+        <!-- Nav Links -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="#" class="px-4 py-2 text-sm font-medium text-plum-700 bg-plum-50 rounded-full">Home</a>
+          <a href="#" class="px-4 py-2 text-sm font-medium text-warm-400 hover:text-plum-700 hover:bg-plum-50/50 rounded-full transition">My Recipes</a>
+          <a href="#" class="px-4 py-2 text-sm font-medium text-warm-400 hover:text-plum-700 hover:bg-plum-50/50 rounded-full transition">Collections</a>
+          <a href="#" class="px-4 py-2 text-sm font-medium text-warm-400 hover:text-plum-700 hover:bg-plum-50/50 rounded-full transition">Flavor DNA</a>
+          <a href="#" class="px-4 py-2 text-sm font-medium text-warm-400 hover:text-plum-700 hover:bg-plum-50/50 rounded-full transition">Discover</a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-3">
+          <button class="p-2 text-warm-300 hover:text-plum-600 hover:bg-plum-50 rounded-full transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+            </svg>
+          </button>
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-plum-500 to-gold-500 flex items-center justify-center text-white font-medium text-sm ring-2 ring-white shadow-lg">
+            JD
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-28 pb-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <!-- Hero Section -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-display font-semibold text-plum-900 mb-4">
+          Welcome back, <span class="gradient-text">John</span>
+        </h1>
+        <p class="text-lg text-warm-300 max-w-xl mx-auto">
+          Continue weaving your unique flavor story. Your culinary journey awaits.
+        </p>
+      </div>
+
+      <!-- Quick Actions - Elegant Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <button class="group p-6 bg-gradient-to-br from-plum-600 to-plum-700 rounded-3xl text-white shadow-xl shadow-plum-200/50 hover:shadow-2xl hover:shadow-plum-300/50 transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+          </div>
+          <span class="font-display font-medium">Add Recipe</span>
+        </button>
+
+        <button class="group p-6 bg-white rounded-3xl border border-plum-100 shadow-lg shadow-plum-100/30 hover:shadow-xl hover:border-plum-200 transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 bg-gradient-to-br from-gold-100 to-gold-200 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+            <svg class="w-6 h-6 text-gold-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <span class="font-display font-medium text-plum-800">Inspire Me</span>
+        </button>
+
+        <button class="group p-6 bg-white rounded-3xl border border-plum-100 shadow-lg shadow-plum-100/30 hover:shadow-xl hover:border-plum-200 transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 bg-gradient-to-br from-rose-100 to-rose-200 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+            <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <span class="font-display font-medium text-plum-800">Favorites</span>
+        </button>
+
+        <button class="group p-6 bg-white rounded-3xl border border-plum-100 shadow-lg shadow-plum-100/30 hover:shadow-xl hover:border-plum-200 transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 bg-gradient-to-br from-plum-100 to-plum-200 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+            <svg class="w-6 h-6 text-plum-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          <span class="font-display font-medium text-plum-800">Fusion Lab</span>
+        </button>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Left Column - Featured Content -->
+        <div class="lg:col-span-2 space-y-8">
+          <!-- Flavor DNA Visualization -->
+          <div class="bg-white/80 backdrop-blur rounded-[2rem] border border-plum-100 p-8 shadow-xl shadow-plum-100/20">
+            <div class="flex items-center justify-between mb-8">
+              <div>
+                <h2 class="text-2xl font-display font-semibold text-plum-900">Your Flavor DNA</h2>
+                <p class="text-warm-300 mt-1">The threads that define your taste</p>
+              </div>
+              <button class="text-sm font-medium text-plum-600 hover:text-plum-700 px-4 py-2 hover:bg-plum-50 rounded-full transition">Explore Profile</button>
+            </div>
+
+            <!-- DNA Strands Visualization -->
+            <div class="relative h-48 mb-8">
+              <svg class="w-full h-full" viewBox="0 0 600 150">
+                <!-- DNA Strand Background -->
+                <defs>
+                  <linearGradient id="strand1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8"/>
+                    <stop offset="50%" style="stop-color:#eab308;stop-opacity:0.8"/>
+                    <stop offset="100%" style="stop-color:#f43f5e;stop-opacity:0.8"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Flavor Bars -->
+                <g transform="translate(50, 20)">
+                  <text x="0" y="12" class="text-xs" fill="#78716c">Heat</text>
+                  <rect x="80" y="0" width="400" height="16" rx="8" fill="#f3e8ff"/>
+                  <rect x="80" y="0" width="320" height="16" rx="8" fill="url(#strand1)"/>
+                  <text x="490" y="12" class="text-xs font-semibold" fill="#7c3aed">8/10</text>
+                </g>
+
+                <g transform="translate(50, 50)">
+                  <text x="0" y="12" class="text-xs" fill="#78716c">Herbs</text>
+                  <rect x="80" y="0" width="400" height="16" rx="8" fill="#fef9c3"/>
+                  <rect x="80" y="0" width="360" height="16" rx="8" fill="#eab308"/>
+                  <text x="490" y="12" class="text-xs font-semibold" fill="#ca8a04">9/10</text>
+                </g>
+
+                <g transform="translate(50, 80)">
+                  <text x="0" y="12" class="text-xs" fill="#78716c">Umami</text>
+                  <rect x="80" y="0" width="400" height="16" rx="8" fill="#ffe4e6"/>
+                  <rect x="80" y="0" width="280" height="16" rx="8" fill="#f43f5e"/>
+                  <text x="490" y="12" class="text-xs font-semibold" fill="#e11d48">7/10</text>
+                </g>
+
+                <g transform="translate(50, 110)">
+                  <text x="0" y="12" class="text-xs" fill="#78716c">Sweet</text>
+                  <rect x="80" y="0" width="400" height="16" rx="8" fill="#f3e8ff"/>
+                  <rect x="80" y="0" width="200" height="16" rx="8" fill="#a855f7"/>
+                  <text x="490" y="12" class="text-xs font-semibold" fill="#9333ea">5/10</text>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Flavor Affinities -->
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-2 bg-gradient-to-r from-plum-100 to-plum-50 text-plum-700 text-sm font-medium rounded-full border border-plum-200">Garlic</span>
+              <span class="px-4 py-2 bg-gradient-to-r from-gold-100 to-gold-50 text-gold-700 text-sm font-medium rounded-full border border-gold-200">Lemon</span>
+              <span class="px-4 py-2 bg-gradient-to-r from-rose-100 to-rose-50 text-rose-600 text-sm font-medium rounded-full border border-rose-200">Chili</span>
+              <span class="px-4 py-2 bg-gradient-to-r from-plum-100 to-plum-50 text-plum-700 text-sm font-medium rounded-full border border-plum-200">Fresh Herbs</span>
+              <span class="px-4 py-2 bg-gradient-to-r from-gold-100 to-gold-50 text-gold-700 text-sm font-medium rounded-full border border-gold-200">Parmesan</span>
+            </div>
+          </div>
+
+          <!-- Recipe Stories -->
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-display font-semibold text-plum-900">Your Recipe Stories</h2>
+              <button class="text-sm font-medium text-plum-600 hover:text-plum-700">View All</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Recipe Card 1 -->
+              <div class="group bg-white rounded-[1.5rem] overflow-hidden shadow-lg shadow-plum-100/30 hover:shadow-xl transition-all duration-500 border border-plum-50">
+                <div class="relative aspect-[4/3] overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Recipe" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                  <div class="absolute inset-0 bg-gradient-to-t from-plum-900/80 via-plum-900/20 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="px-3 py-1 bg-white/90 backdrop-blur text-plum-700 text-xs font-medium rounded-full">Italian</span>
+                  </div>
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <h3 class="font-display text-xl font-semibold text-white mb-1">Spicy Vodka Rigatoni</h3>
+                    <div class="flex items-center gap-3 text-white/80 text-sm">
+                      <span>25 min</span>
+                      <span class="w-1 h-1 bg-white/50 rounded-full"></span>
+                      <span class="text-gold-300">96% Match</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-5">
+                  <p class="text-warm-300 text-sm line-clamp-2">A creamy, spicy pasta that's become a weeknight favorite. The perfect balance of heat and richness.</p>
+                  <div class="flex items-center gap-2 mt-4">
+                    <span class="text-xs text-plum-500">Cooked 3 times</span>
+                    <span class="text-plum-200">|</span>
+                    <span class="text-xs text-gold-600">Your notes: "Add extra garlic"</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recipe Card 2 -->
+              <div class="group bg-white rounded-[1.5rem] overflow-hidden shadow-lg shadow-plum-100/30 hover:shadow-xl transition-all duration-500 border border-plum-50">
+                <div class="relative aspect-[4/3] overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Recipe" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                  <div class="absolute inset-0 bg-gradient-to-t from-plum-900/80 via-plum-900/20 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="px-3 py-1 bg-white/90 backdrop-blur text-plum-700 text-xs font-medium rounded-full">Thai</span>
+                  </div>
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <h3 class="font-display text-xl font-semibold text-white mb-1">Thai Basil Chicken</h3>
+                    <div class="flex items-center gap-3 text-white/80 text-sm">
+                      <span>30 min</span>
+                      <span class="w-1 h-1 bg-white/50 rounded-full"></span>
+                      <span class="text-gold-300">94% Match</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-5">
+                  <p class="text-warm-300 text-sm line-clamp-2">Aromatic and bold, this dish brings the streets of Bangkok to your kitchen.</p>
+                  <div class="flex items-center gap-2 mt-4">
+                    <span class="text-xs text-plum-500">Cooked 5 times</span>
+                    <span class="text-plum-200">|</span>
+                    <span class="text-xs text-gold-600">Family favorite</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Sidebar -->
+        <div class="space-y-6">
+          <!-- AI Suggestion - Elegant Card -->
+          <div class="relative bg-gradient-to-br from-plum-600 via-plum-700 to-plum-800 rounded-[2rem] p-6 text-white overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 w-40 h-40 opacity-10">
+              <svg viewBox="0 0 100 100" fill="currentColor">
+                <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="0.5"/>
+              </svg>
+            </div>
+
+            <div class="relative">
+              <div class="flex items-center gap-2 mb-4">
+                <div class="w-8 h-8 bg-white/20 rounded-xl flex items-center justify-center">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                  </svg>
+                </div>
+                <span class="font-display font-medium">Tonight's Inspiration</span>
+              </div>
+
+              <p class="text-white/80 text-sm mb-4">Based on your flavor story and what's in your pantry...</p>
+
+              <div class="bg-white/10 backdrop-blur rounded-2xl p-4 mb-4">
+                <p class="font-display text-lg font-medium">Lemon Herb Roasted Chicken</p>
+                <p class="text-xs text-white/60 mt-2">Perfect match for your herb-forward palate</p>
+              </div>
+
+              <button class="w-full py-3 bg-gold-500 text-plum-900 font-semibold rounded-2xl hover:bg-gold-400 transition shadow-lg">
+                Start This Journey
+              </button>
+            </div>
+          </div>
+
+          <!-- Culinary Journey Stats -->
+          <div class="bg-white/80 backdrop-blur rounded-[2rem] border border-plum-100 p-6">
+            <h3 class="font-display text-lg font-semibold text-plum-900 mb-4">Your Culinary Journey</h3>
+
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-3 bg-plum-50/50 rounded-xl">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 bg-plum-100 rounded-xl flex items-center justify-center">
+                    <svg class="w-5 h-5 text-plum-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-medium text-plum-800">Recipes Collected</span>
+                </div>
+                <span class="text-xl font-display font-bold text-plum-600">47</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3 bg-gold-50/50 rounded-xl">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 bg-gold-100 rounded-xl flex items-center justify-center">
+                    <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-medium text-plum-800">Cuisines Explored</span>
+                </div>
+                <span class="text-xl font-display font-bold text-gold-600">12</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3 bg-rose-50/50 rounded-xl">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 bg-rose-100 rounded-xl flex items-center justify-center">
+                    <svg class="w-5 h-5 text-rose-500" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-medium text-plum-800">Dishes Cooked</span>
+                </div>
+                <span class="text-xl font-display font-bold text-rose-500">89</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flavor Twins Preview -->
+          <div class="bg-white/80 backdrop-blur rounded-[2rem] border border-plum-100 p-6">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="font-display text-lg font-semibold text-plum-900">Flavor Twins</h3>
+              <span class="text-xs text-plum-500">People like you</span>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-rose-400 to-plum-500 flex items-center justify-center text-white text-sm font-medium">
+                  ST
+                </div>
+                <div class="flex-1">
+                  <p class="text-sm font-medium text-plum-800">Sarah T.</p>
+                  <p class="text-xs text-plum-400">98% match</p>
+                </div>
+                <button class="text-xs text-plum-600 hover:text-plum-700">View</button>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-white text-sm font-medium">
+                  MK
+                </div>
+                <div class="flex-1">
+                  <p class="text-sm font-medium text-plum-800">Mike K.</p>
+                  <p class="text-xs text-plum-400">94% match</p>
+                </div>
+                <button class="text-xs text-plum-600 hover:text-plum-700">View</button>
+              </div>
+            </div>
+
+            <button class="w-full mt-4 py-2 text-sm font-medium text-plum-600 hover:bg-plum-50 rounded-xl transition">
+              Find More Twins
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

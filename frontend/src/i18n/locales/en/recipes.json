@@ -1,0 +1,155 @@
+{
+  "categories": {
+    "all": "All",
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "dessert": "Dessert",
+    "snack": "Snack",
+    "salad": "Salad",
+    "soup": "Soup"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "expert": "Expert"
+  },
+  "form": {
+    "title": "Recipe Title",
+    "description": "Description",
+    "author": "Author / Chef",
+    "prepTime": "Prep Time (min)",
+    "cookTime": "Cook Time (min)",
+    "servings": "Servings",
+    "difficulty": "Difficulty",
+    "selectDifficulty": "Select...",
+    "ingredients": "Ingredients",
+    "ingredientsCount": "Ingredients ({{count}})",
+    "steps": "Steps",
+    "stepsCount": "Steps ({{count}})",
+    "notes": "Notes",
+    "tags": "Tags",
+    "category": "Category"
+  },
+  "actions": {
+    "addRecipe": "Add Recipe",
+    "editRecipe": "Edit Recipe",
+    "deleteRecipe": "Delete Recipe",
+    "saveRecipe": "Save Recipe",
+    "generateWithAI": "Generate with AI",
+    "translateRecipe": "Translate to English and Arabic",
+    "reloadImage": "Reload Image",
+    "reloadImages": "Reload Images",
+    "viewOriginal": "View original source",
+    "viewOriginalCaption": "View original caption"
+  },
+  "labels": {
+    "totalTime": "Total Time",
+    "servings": "Servings",
+    "difficulty": "Difficulty",
+    "adjustServings": "Adjust servings:",
+    "by": "By",
+    "optional": "optional",
+    "stepsTotal": "{{count}} steps total",
+    "minutes": "{{count}} min",
+    "personalNotes": "Personal Notes",
+    "noPersonalNotes": "No personal notes yet",
+    "sharedNotes": "Shared Notes",
+    "editNotes": "Edit Notes"
+  },
+  "tabs": {
+    "ingredients": "Ingredients",
+    "steps": "Steps",
+    "nutrition": "Nutrition",
+    "notes": "Notes"
+  },
+  "translation": {
+    "available": "Available",
+    "translating": "Translating...",
+    "retranslate": "Re-translate",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "english": "English",
+    "arabic": "العربية",
+    "ingredientsLabel": "Ingredients:",
+    "stepsLabel": "Steps:",
+    "tipLabel": "Tip:"
+  },
+  "ai": {
+    "enhanced": "AI Enhanced",
+    "generating": "Generating...",
+    "generateSteps": "Generate Detailed Steps",
+    "regenerateSteps": "Regenerate Steps",
+    "generatedSuccess": "Detailed steps generated successfully!",
+    "generatedFailed": "Failed to generate steps. Please try again.",
+    "translatedSuccess": "Recipe translated to English and Arabic!",
+    "translatedFailed": "Failed to translate recipe. Please try again."
+  },
+  "list": {
+    "title": "My Recipes",
+    "subtitle": "{{count}} recipes in your collection",
+    "addRecipe": "Add Recipe",
+    "searchPlaceholder": "Search recipes...",
+    "filterByChef": "Filtering by chef:",
+    "filters": "Filters",
+    "select": "Select",
+    "demoMode": "Demo Mode - Using sample data",
+    "sort": {
+      "label": "Sort:",
+      "dateAdded": "Date Added",
+      "title": "Title",
+      "prepTime": "Prep Time",
+      "cookTime": "Cook Time",
+      "servings": "Servings",
+      "ascending": "Ascending",
+      "descending": "Descending"
+    },
+    "selection": {
+      "selected": "{{count}} selected",
+      "deselectAll": "Deselect all",
+      "selectAll": "Select all",
+      "clearSelection": "Clear selection"
+    },
+    "bulkActions": {
+      "reloading": "Reloading...",
+      "reloadImages": "Reload Images",
+      "reloadSuccess": "Reloaded {{count}} image(s)",
+      "reloadFailed": "Failed to reload {{count}} image(s)"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {{current}} of {{total}}"
+    },
+    "empty": {
+      "title": "No recipes found",
+      "tryAdjusting": "Try adjusting your filters",
+      "noRecipesYet": "You haven't added any recipes yet",
+      "addFirst": "Add Your First Recipe"
+    },
+    "error": {
+      "title": "Failed to load recipes",
+      "message": "Please try again later"
+    }
+  },
+  "errors": {
+    "notFound": "Recipe not found",
+    "notFoundDesc": "The recipe you're looking for doesn't exist.",
+    "failedToDelete": "Failed to delete recipe",
+    "failedToSaveImage": "Failed to save image. Please try again.",
+    "imageSaved": "Image saved locally!"
+  },
+  "confirm": {
+    "deleteTitle": "Delete Recipe",
+    "deleteMessage": "Are you sure you want to delete this recipe?",
+    "deleteButton": "Delete"
+  },
+  "demo": {
+    "viewingSample": "Demo Mode - Viewing sample recipe"
+  },
+  "video": {
+    "label": "Video",
+    "notSupported": "Your browser does not support the video tag."
+  }
+}

@@ -1,0 +1,1 @@
+export { SavedPostsPage } from './SavedPostsPage';
